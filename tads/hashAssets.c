@@ -6,7 +6,6 @@
 
 
 #include "hashAssets.h"
-
 //Aleatorizar os numeros para gerar indices melhores
 unsigned int hash(const char *key,int tamanho) {
     unsigned long int hashValue = 0;
@@ -39,8 +38,8 @@ hashTable *iniciaTabela(int tamanho) {
 
     //Aloca e seta os campos da tabela
     hashtable->entries = malloc(sizeof(tipoItem*) * tamanho);
-    hashtable->tamanho = tamanho;
-    hashtable->countItens =0;
+    hashtable->tanho = tamanho;
+    hashtable->countItens = 0;
 
     // Seta tds os valores da tabela para nulo inicialmente
     int i = 0;
